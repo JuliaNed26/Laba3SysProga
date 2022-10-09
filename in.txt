@@ -1,0 +1,16 @@
+var num:integer;
+function squareroot(num:real):real;
+var i:integer;
+    ans:real;
+(*kdglk dfgklhb; 'dgv*)
+begin
+    ans:=1.0;
+    for i:=1 to 10 do
+        ans:=ans-(ans*ans-num)/(2*ans);
+    squareroot:=ans;
+end;
+begin ~
+     writeln('enter a number ');
+     readln(num);
+     writeln('squareroot(',num,')=',squareroot(num):0:18);
+end.
